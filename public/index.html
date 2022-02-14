@@ -16,7 +16,7 @@
 
         <!-- Decoration -->
         <div class="">
-            <img src="./img/blured-box.png"            alt="" class="absolute right-0 top-[278px] xl:w-[56px] xl:h-[93] 2xl:w-[85px] 2xl:h-[141]">
+            <img src="./img/blured-box.png"            alt="" class="absolute right-0 lg:top-[209px] xl:top-[278px] lg:w-[47px] lg:h-[79px] xl:w-[46px] xl:h-[93] 2xl:w-[85px] 2xl:h-[141px]">
             <img src="./img/ellipses.png"              alt="" class="absolute left-0 top-[278px]">
             <img src="./img/gradient-ellipse.png"      alt="" class="absolute top-[221px] left-[94px]">
             <img src="./img/blue-ellipse-small.png"    alt="" class="absolute top-[218px] left-[632px]">
@@ -149,19 +149,48 @@
                 </p>
             </div>
 
-            <!-- Lines -->
-            <div class=" flex-col xl:flex-row items-center justify-center xl:mt-[77px] 2xl:mt-[55px] xl:space-x-4">
-                <img src="./img/gradient-ellipse-huge.png" alt="" class="w-6 h-6">
-                <div class="lg:w-0.5 lg:h-[85px] xl:w-[230px] 2xl:w-[265px] xl:h-[2px] bg-blue-300"></div>
-                <img src="./img/gradient-ellipse-huge.png" alt="" class="w-6 h-6">
-                <div class="lg:w-0.5 lg:h-[85px] xl:w-[230px] 2xl:w-[265px] xl:h-[2px] bg-green-300"></div>
-                <img src="./img/gradient-ellipse-huge.png" alt="" class="w-6 h-6">
-                <div class="lg:w-0.5 lg:h-[85px] xl:w-[230px] 2xl:w-[265px] xl:h-[2px] bg-red-300"></div>
-                <img src="./img/gradient-ellipse-huge.png" alt="" class="w-6 h-6">
+            <div class="mt-[50px] xl:mt-[77px] 2xl:mt-[55px] flex justify-center lg:space-x-[38px] xl:space-x-0">
+                
+                <!-- Steps for 1024px - left side -->
+                <div class="hidden lg:block xl:hidden">
+                    <!-- Second step -->
+                    <div class="mt-[95px] w-[224px] text-center">
+                        <p class="lg:text-xl 2xl:text-2xl font-bold hover:text-blue-300 cursor-default">Track a delivery</p>
+                        <p class="mt-2 text-sm 2xl:text-base font-medium text-gray-400">You can track your package in real time 24/7</p>
+                    </div>
+                    <!-- Fourth step -->
+                    <div class="mt-[226px] w-[224px] text-center">
+                        <p class="lg:text-xl 2xl:text-2xl font-bold hover:text-blue-300 cursor-default">Send another one</p>
+                        <p class="mt-2 text-sm 2xl:text-base font-medium text-gray-400">You can create a new delivery! </p>
+                    </div>
+                </div>
+                <!-- Lines -->
+                <div class="hidden md:flex md:flex-col xl:flex-row items-center justify-center lg:space-y-4 xl:space-y-0 xl:space-x-4">
+                    <img src="./img/gradient-ellipse-huge.png" alt="" class="w-6 h-6">
+                    <div class="lg:w-0.5 lg:h-[85px] xl:w-[230px] 2xl:w-[265px] xl:h-[2px] bg-blue-300"></div>
+                    <img src="./img/gradient-ellipse-huge.png" alt="" class="w-6 h-6">
+                    <div class="lg:w-0.5 lg:h-[85px] xl:w-[230px] 2xl:w-[265px] xl:h-[2px] bg-green-300"></div>
+                    <img src="./img/gradient-ellipse-huge.png" alt="" class="w-6 h-6">
+                    <div class="lg:w-0.5 lg:h-[85px] xl:w-[230px] 2xl:w-[265px] xl:h-[2px] bg-red-300"></div>
+                    <img src="./img/gradient-ellipse-huge.png" alt="" class="w-6 h-6">
+                </div>
+                <!-- Steps for 1024px - right side -->
+                <div class="hidden lg:block xl:hidden">
+                    <!-- First step -->
+                    <div class="w-[224px] text-center">
+                        <p class="lg:text-xl 2xl:text-2xl font-bold hover:text-blue-300 cursor-default">Create a package</p>
+                        <p class="mt-2 text-sm 2xl:text-base font-medium text-gray-400">Create a package, set the temperature and reserv a funds</p>
+                    </div>
+                    <!-- Third step -->
+                    <div class="mt-[183px] w-[224px] text-center">
+                        <p class="lg:text-xl 2xl:text-2xl font-bold hover:text-blue-300 cursor-default">Get a withdraw</p>
+                        <p class="mt-2 text-sm 2xl:text-base font-medium text-gray-400">If delivery is succesful, withdraw can be done and would be send to the account defined </p>
+                    </div>
+                </div>
             </div>
-
+            
             <!-- Steps -->
-            <div class="flex justify-center mt-[31px] xl:space-x-[60px] 2xl:space-x-[100px]">
+            <div class="lg:hidden xl:flex justify-center mt-[31px] xl:space-x-[60px] 2xl:space-x-[100px]">
 
                 <!-- First step -->
                 <div class="w-[224px] text-center">
@@ -200,63 +229,63 @@
             <img src="./img/near-1.png" alt="" class="absolute top-[154px] right-0 z-10 xl:w-[55px] xl:h-[97px] 2xl:w-[82px] 2xl:h-[121px]">
         </div>
 
-        <div class="container mx-auto lg:pl-[31px] lg:pr-[30px] xl:pl-[77px] xl:pr-[76px] 2xl:px-20">
+        <div class="relative z-20 container mx-auto lg:pl-[31px] lg:pr-[30px] xl:pl-[77px] xl:pr-[76px] 2xl:px-20">
 
             <!-- Title -->
-            <div class="w-[362px]">
-                <p class="xl:text-[28px] 2xl:text-[35px] font-bold">Main features</p>
-                <p class="mt-4 xl:text-base 2xl:text-xl font-medium text-gray-400 leading-[30xp]">
-                    Key features of cold chain deliveries or how this can help you
+            <div class=" lg:text-center xl:text-left">
+                <p class="lg:text-[28px] 2xl:text-[35px] font-bold">Main features</p>
+                <p class="mt-4 lg:text-base 2xl:text-xl font-medium text-gray-400 leading-[30xp]">
+                    Key features of cold chain deliveries <br> or how this can help you
                 </p>
             </div>
 
             <!-- Cards -->
-            <div class="flex justify-between mt-11">
+            <div class="lg:w-[548px] mx-auto xl:w-auto flex flex-wrap justify-between mt-11">
 
                 <!-- First card -->
-                <div class="xl:w-[242px] xl:h-[280px] 2xl:w-[270px] 2xl:h-[312px] bg-blue-300 rounded-[20px] pt-[30px] pr-[40px] pb-[50px] pl-[33px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class=" xl:w-[84px] xl:h-[84px] 2xl:w-[94px] 2xl:h-[94px]" viewBox="0 0 94 94" fill="none">
+                <div class="lg:w-[242px] xl:h-[280px] 2xl:w-[270px] 2xl:h-[312px] bg-blue-300 rounded-[20px] lg:pt-[26px] 2xl:pt-[30px] lg:pr-[39px] 2xl:pr-[40px] lg:pb-[44px] 2xl:pb-[50px] lg:pl-[26px] 2xl:pl-[33px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" lg:w-[84px] lg:h-[84px] 2xl:w-[94px] 2xl:h-[94px]" viewBox="0 0 94 94" fill="none">
                         <circle cx="47" cy="47" r="47" fill="#181817"/>
                         <path d="M68.0809 33.3374L48.2919 21.9123C47.4926 21.4508 46.5079 21.4508 45.7086 21.9123L25.9196 33.3374C25.1203 33.7989 24.6279 34.6517 24.6279 35.5747V58.425C24.6279 59.348 25.1203 60.2008 25.9196 60.6623L45.7086 72.0874C46.5079 72.5489 47.4926 72.5489 48.2919 72.0874L68.0809 60.6623C68.8802 60.2008 69.3726 59.348 69.3726 58.425V35.5747C69.3726 34.6517 68.8802 33.7989 68.0809 33.3374Z" stroke="white" stroke-width="5.16667" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M47 54.75C51.2802 54.75 54.75 51.2802 54.75 47C54.75 42.7198 51.2802 39.25 47 39.25C42.7198 39.25 39.25 42.7198 39.25 47C39.25 51.2802 42.7198 54.75 47 54.75Z" stroke="white" stroke-width="5.16667" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
-                    <p class="xl:text-[25px] 2xl:text-[28px] font-bold mt-4">Simplicity</p>
-                    <p class="xl:text-base 2xl:text-lg font-semibold text-white w-[197px]">
+                    <p class="lg:text-[25px] 2xl:text-[28px] font-bold mt-4">Simplicity</p>
+                    <p class="lg:text-base 2xl:text-lg font-semibold text-white w-[197px]">
                         You can create package just in 3 clicks!
                     </p>
                 </div>
                 <!-- Second card -->
-                <div class="xl:w-[242px] xl:h-[280px] 2xl:w-[270px] 2xl:h-[312px] bg-green-400 rounded-[20px] pt-[30px] pr-[40px] pb-[50px] pl-[33px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class=" xl:w-[84px] xl:h-[84px] 2xl:w-[94px] 2xl:h-[94px]" viewBox="0 0 94 94" fill="none">
+                <div class="lg:w-[242px] xl:h-[280px] 2xl:w-[270px] 2xl:h-[312px] bg-green-400 rounded-[20px] lg:pt-[26px] 2xl:pt-[30px] lg:pr-[39px] 2xl:pr-[40px] lg:pb-[44px] 2xl:pb-[50px] lg:pl-[26px] 2xl:pl-[33px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" lg:w-[84px] lg:h-[84px] 2xl:w-[94px] 2xl:h-[94px]" viewBox="0 0 94 94" fill="none">
                         <circle cx="47" cy="47" r="47" fill="#181817"/>
                         <path d="M49.4167 51.8334C49.4167 50.4987 48.3347 49.4167 47 49.4167C45.6653 49.4167 44.5834 50.4987 44.5834 51.8334V56.6667C44.5834 58.0014 45.6653 59.0834 47 59.0834C48.3347 59.0834 49.4167 58.0014 49.4167 56.6667V51.8334Z" fill="white"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M34.9167 37.6243C30.8473 38.6194 27.6667 42.0695 27.6667 46.4423V59.827C27.6667 66.2682 33.2624 71.1667 39.75 71.1667H54.25C60.7377 71.1667 66.3334 66.2682 66.3334 59.827V46.4423C66.3334 42.0695 63.1528 38.6194 59.0834 37.6243V34.9167C59.0834 28.2433 53.6735 22.8334 47 22.8334C40.3266 22.8334 34.9167 28.2433 34.9167 34.9167V37.6243ZM54.25 34.9167V37.3334H39.75V34.9167C39.75 34.0693 39.8954 33.2559 40.1626 32.5C41.1578 29.6842 43.8433 27.6667 47 27.6667C50.1567 27.6667 52.8422 29.6842 53.8375 32.5C54.1046 33.2559 54.25 34.0693 54.25 34.9167ZM32.5 46.4423C32.5 44.2595 34.4782 42.1667 37.3334 42.1667H56.6667C59.5218 42.1667 61.5 44.2595 61.5 46.4423V59.827C61.5 63.2419 58.4399 66.3334 54.25 66.3334H39.75C35.5602 66.3334 32.5 63.2419 32.5 59.827V46.4423Z" fill="white"/>
                     </svg>
-                    <p class="xl:text-[25px] 2xl:text-[28px] font-bold mt-4">Security</p>
-                    <p class="xl:text-base 2xl:text-lg font-semibold text-white w-[197px]">
+                    <p class="lg:text-[25px] 2xl:text-[28px] font-bold mt-4">Security</p>
+                    <p class="lg:text-base 2xl:text-lg font-semibold text-white w-[197px]">
                         All packages are fully secured from creating to deliver
                     </p>
-                </div>
+                </div>  
                 <!-- Third card -->
-                <div class="xl:w-[242px] xl:h-[280px] 2xl:w-[270px] 2xl:h-[312px] bg-red-300 rounded-[20px] pt-[30px] pr-[40px] pb-[50px] pl-[33px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class=" xl:w-[84px] xl:h-[84px] 2xl:w-[94px] 2xl:h-[94px]" viewBox="0 0 94 94" fill="none">
+                <div class="mt-[64px] xl:mt-0 lg:w-[242px] xl:h-[280px] 2xl:w-[270px] 2xl:h-[312px] bg-red-300 rounded-[20px] lg:pt-[26px] 2xl:pt-[30px] lg:pr-[39px] 2xl:pr-[40px] lg:pb-[44px] 2xl:pb-[50px] lg:pl-[26px] 2xl:pl-[33px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" lg:w-[84px] lg:h-[84px] 2xl:w-[94px] 2xl:h-[94px]" viewBox="0 0 94 94" fill="none">
                         <circle cx="47" cy="47" r="47" fill="#181817"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M45.4299 18.0648C42.106 18.6379 39.3828 20.5772 37.9871 23.3651C36.9898 25.3574 37.0667 24.1912 37.0259 37.9085L36.9897 50.1096L36.0451 51.0551C34.0246 53.078 32.6665 55.6205 32.1586 58.3316C31.9262 59.5721 31.9539 62.3032 32.2109 63.4623C33.0559 67.2761 35.3804 70.588 38.6434 72.6276C41.3227 74.3023 43.7801 75 47 75C50.2199 75 52.6773 74.3023 55.3566 72.6276C58.6196 70.588 60.9441 67.2761 61.7891 63.4623C62.0461 62.3032 62.0738 59.5721 61.8414 58.3316C61.3335 55.6205 59.9754 53.078 57.9549 51.0551L57.0103 50.1096L56.9741 37.9085C56.9333 24.1912 57.0102 25.3574 56.0129 23.3651C54.4044 20.1522 51.1283 18.1257 47.3531 18.0085C46.6087 17.9855 45.7432 18.0108 45.4299 18.0648ZM49.0597 23.1799C50.3544 23.7523 51.3142 24.7658 51.7986 26.072C51.9756 26.5498 51.9976 27.8133 52.0314 39.4386L52.0686 52.2777L53.3561 53.4143C56.0652 55.8061 57.1299 58.1422 56.9697 61.3431C56.9052 62.6309 56.5307 64.0512 55.9921 65.0494C55.0197 66.8521 53.0492 68.65 51.1937 69.4278C49.6554 70.0724 48.9395 70.2051 47 70.2051C45.4188 70.2051 45.0587 70.1705 44.2981 69.9452C41.8947 69.2331 40.091 68.012 38.7838 66.212C38.0314 65.1757 37.8829 64.8905 37.4521 63.6552C37.1617 62.8224 37.0808 62.3695 37.0284 61.2843C36.8764 58.1356 37.9548 55.7884 40.6439 53.4143L41.9314 52.2777L41.9686 39.4386C42.0028 27.6979 42.023 26.5533 42.2059 26.058C42.7662 24.5413 43.9836 23.4246 45.6465 22.902C45.9361 22.811 46.5247 22.7658 47.1765 22.7847C48.0864 22.8113 48.3521 22.8671 49.0597 23.1799ZM44.5243 45.5328L44.5203 54.0375L43.5533 54.4795C41.6557 55.3468 40.0964 57.2644 39.6443 59.2868C38.5184 64.3234 43.2665 68.8229 48.5814 67.756C51.3844 67.1933 53.7619 64.9402 54.3557 62.284C55.0568 59.1478 53.393 55.8261 50.4467 54.4795L49.4797 54.0375L49.4757 45.5328L49.4717 37.0282H47H44.5283L44.5243 45.5328Z" fill="white"/>
                     </svg>
-                    <p class="xl:text-[25px] 2xl:text-[28px] font-bold mt-4">Temp-contoll</p>
-                    <p class="xl:text-base 2xl:text-lg font-semibold text-white w-[197px]">
+                    <p class="lg:text-[25px] 2xl:text-[28px] font-bold mt-4">Temp-contoll</p>
+                    <p class="lg:text-base 2xl:text-lg font-semibold text-white w-[197px]">
                         We give a 100%  return if your package will deliver in other temperature
                     </p>
                 </div>
                 <!-- Fourth card -->
-                <div class="xl:w-[242px] xl:h-[280px] 2xl:w-[270px] 2xl:h-[312px] background-gradient-mash rounded-[20px] pt-[30px] pr-[40px] pb-[50px] pl-[33px]">
-                    <svg xmlns="http://www.w3.org/2000/svg" class=" xl:w-[84px] xl:h-[84px] 2xl:w-[94px] 2xl:h-[94px]" viewBox="0 0 94 94" fill="none">
+                <div class="mt-[64px] xl:mt-0 lg:w-[242px] xl:h-[280px] 2xl:w-[270px] 2xl:h-[312px] background-gradient-mash rounded-[20px] lg:pt-[26px] 2xl:pt-[30px] lg:pr-[39px] 2xl:pr-[40px] lg:pb-[44px] 2xl:pb-[50px] lg:pl-[26px] 2xl:pl-[33px]">
+                    <svg xmlns="http://www.w3.org/2000/svg" class=" lg:w-[84px] lg:h-[84px] 2xl:w-[94px] 2xl:h-[94px]" viewBox="0 0 94 94" fill="none">
                         <circle cx="47" cy="47" r="47" fill="#181817"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M47.5 38.625C43.1508 38.625 39.625 42.1508 39.625 46.5C39.625 50.8492 43.1508 54.375 47.5 54.375C51.8492 54.375 55.375 50.8492 55.375 46.5C55.375 42.1508 51.8492 38.625 47.5 38.625ZM44.875 46.5C44.875 45.0503 46.0503 43.875 47.5 43.875C48.9497 43.875 50.125 45.0503 50.125 46.5C50.125 47.9497 48.9497 49.125 47.5 49.125C46.0503 49.125 44.875 47.9497 44.875 46.5Z" fill="white"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M73.3037 44.6119C67.2979 33.7736 57.5071 28.125 47.5 28.125C37.4929 28.125 27.7021 33.7736 21.6963 44.6119C21.1092 45.6715 21.102 46.978 21.6708 48.0424C27.5811 59.1034 37.4274 64.875 47.5 64.875C57.5726 64.875 67.4189 59.1034 73.3292 48.0424C73.898 46.978 73.8908 45.6715 73.3037 44.6119ZM47.5 59.625C39.785 59.625 31.8564 55.3526 26.7408 46.3653C31.9301 37.5649 39.8171 33.375 47.5 33.375C55.1829 33.375 63.0699 37.5649 68.2592 46.3653C63.1436 55.3526 55.215 59.625 47.5 59.625Z" fill="white"/>
                     </svg>
-                    <p class="xl:text-[25px] 2xl:text-[28px] font-bold mt-4">Tracking</p>
-                    <p class="xl:text-base 2xl:text-lg font-semibold text-white w-[197px]">
+                    <p class="lg:text-[25px] 2xl:text-[28px] font-bold mt-4">Tracking</p>
+                    <p class="lg:text-base 2xl:text-lg font-semibold text-white w-[197px]">
                         You can track all packages from this
                         webapplication
                     </p>
@@ -272,67 +301,86 @@
 
             <!-- Title -->
             <div class="text-center">
-                <p class="xl:text-[28px] 2xl:text-[35px] font-bold">Locations or way of package</p>
-                <div class="xl:text-base 2xl:text-xl mt-4 font-medium text-gray-400">Our packages move for this points</div>
+                <p class="lg:text-[28px] 2xl:text-[35px] font-bold">Locations or way of package</p>
+                <div class="lg:text-base 2xl:text-xl mt-4 font-medium text-gray-400">Our packages move for this points</div>
             </div>
 
             <!-- Map -->
-            <div class="relative bg-gray-100 my-[70px] xl:w-[1112px] xl:h-[614px] 2xl:w-[1295px] 2xl:h-[723px]">
+            <div class="relative bg-gray-100 lg:my-5 w-[333px] h-[184px] md:w-[641px] md:h-[354px] lg:w-[934px] lg:h-[516px] xl:my-[70px] xl:w-[1112px] xl:h-[614px] 2xl:w-[1295px] 2xl:h-[723px]">
                 <img src="./img/dots.png" alt="" class="">
                 <!-- Pointers -->
-                <img src="./img/LA.png"     alt="" class="absolute xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] xl:top-[172px] xl:left-[130px] 2xl:top-[203px] 2xl:left-[151px]">
-                <img src="./img/NY.png"     alt="" class="absolute xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] xl:top-[121px] xl:left-[261px] 2xl:top-[138px] 2xl:left-[304px]">
-                <img src="./img/Lagos.png"  alt="" class="absolute xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] xl:top-[284px] xl:left-[505px] 2xl:top-[326px] 2xl:left-[586px]">
-                <img src="./img/Kyiv.png"   alt="" class="absolute xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] xl:top-[116px] xl:left-[595px] 2xl:top-[134px] 2xl:left-[692px]">
-                <img src="./img/Sydney.png" alt="" class="absolute xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] xl:top-[434px] xl:left-[968px] 2xl:top-[505px] 2xl:left-[1127px]">
+                <img src="./img/LA.png"     alt="" class="absolute w-[15px] h-[42px] md:w-[28px] md:h-[46px] lg:w-[41px] lg:h-[66px] xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] top-[52px]  left-[39px]  md:top-[99px] md:left-[75px]   lg:top-[145px] lg:left-[109px] xl:top-[172px] xl:left-[130px] 2xl:top-[203px] 2xl:left-[151px]">
+                <img src="./img/NY.png"     alt="" class="absolute w-[15px] h-[42px] md:w-[28px] md:h-[46px] lg:w-[41px] lg:h-[66px] xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] top-[35px]  left-[78px]  md:top-[68px] md:left-[150px]  lg:top-[98px]  lg:left-[219px] xl:top-[121px] xl:left-[261px] 2xl:top-[138px] 2xl:left-[304px]">
+                <img src="./img/Lagos.png"  alt="" class="absolute w-[15px] h-[42px] md:w-[28px] md:h-[46px] lg:w-[41px] lg:h-[66px] xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] top-[83px]  left-[151px] md:top-[160px] md:left-[290px] lg:top-[233px] lg:left-[423px] xl:top-[284px] xl:left-[505px] 2xl:top-[326px] 2xl:left-[586px]">
+                <img src="./img/Kyiv.png"   alt="" class="absolute w-[15px] h-[42px] md:w-[28px] md:h-[46px] lg:w-[41px] lg:h-[66px] xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] top-[29px]  left-[188px] md:top-[56px] md:left-[343px]  lg:top-[97px] lg:left-[499px] xl:top-[116px] xl:left-[595px] 2xl:top-[134px] 2xl:left-[692px]">
+                <img src="./img/Sydney.png" alt="" class="absolute w-[15px] h-[42px] md:w-[28px] md:h-[46px] lg:w-[41px] lg:h-[66px] xl:w-[49px] xl:h-[79px] 2xl:w-[57px] 2xl:h-[93px] top-[128px] left-[290px] md:top-[247px] md:left-[558px] lg:top-[365px] lg:left-[813px] xl:top-[434px] xl:left-[968px] 2xl:top-[505px] 2xl:left-[1127px]">
                 <!-- Lines -->
-                <img src="./img/1.png" alt="" class="absolute xl:w-[89px]  xl:h-[40px] 2xl:w-[103px]  2xl:h-[43px]  xl:top-[205px] xl:left-[179px] 2xl:top-[237px] 2xl:left-[207px]">
-                <img src="./img/2.png" alt="" class="absolute xl:w-[205px] xl:h-[163px] 2xl:w-[237px] 2xl:h-[188px] xl:top-[201px] xl:left-[303px] 2xl:top-[233px] 2xl:left-[354px]">
-                <img src="./img/3.png" alt="" class="absolute xl:w-[66px]  xl:h-[156px] 2xl:w-[76px]  2xl:h-[181px] xl:top-[207px] xl:left-[550px] 2xl:top-[242px] 2xl:left-[636px]">
-                <img src="./img/4.png" alt="" class="absolute xl:w-[340px] xl:h-[323px] 2xl:w-[393px] 2xl:h-[374px] xl:top-[192px] xl:left-[638px] 2xl:top-[222px] 2xl:left-[742px]">
+                <img src="./img/1.png" alt="" class="absolute w-[27px]  h-[12px] md:w-[51px]  md:h-[23px]  lg:w-[75px] lg:h-[33px] xl:w-[89px]  xl:h-[40px] 2xl:w-[103px]  2xl:h-[43px]  top-[61px] left-[54px]  md:top-[118px] md:left-[103px] lg:top-[172px] lg:left-[150px] xl:top-[205px] xl:left-[179px] 2xl:top-[237px] 2xl:left-[207px]">
+                <img src="./img/2.png" alt="" class="absolute w-[61px]  h-[49px] md:w-[118px] md:h-[94px]  lg:w-[172px] lg:h-[136px] xl:w-[205px] xl:h-[163px] 2xl:w-[237px] 2xl:h-[188px] top-[60px] left-[92px]  md:top-[116px] md:left-[176px] lg:top-[169px] lg:left-[257px] xl:top-[201px] xl:left-[303px] 2xl:top-[233px] 2xl:left-[354px]">
+                <img src="./img/3.png" alt="" class="absolute w-[20px]  h-[47px] md:w-[38px]  md:h-[90px]  lg:w-[55px] lg:h-[131px] xl:w-[66px]  xl:h-[156px] 2xl:w-[76px]  2xl:h-[181px] top-[63px] left-[165px] md:top-[121px] md:left-[317px] lg:top-[176px] lg:left-[462px] xl:top-[207px] xl:left-[550px] 2xl:top-[242px] 2xl:left-[636px]">
+                <img src="./img/4.png" alt="" class="absolute w-[102px] h-[97px] md:w-[196px] md:h-[186px] lg:w-[285px] lg:h-[271px] xl:w-[340px] xl:h-[323px] 2xl:w-[393px] 2xl:h-[374px] top-[58px] left-[192px] md:top-[112px] md:left-[369px] lg:top-[164px] lg:left-[538px] xl:top-[192px] xl:left-[638px] 2xl:top-[222px] 2xl:left-[742px]">
                 <!-- Boxes -->
-                <img src="./img/Close-box.png"  alt="" class="absolute xl:w-[69px] xl:h-[64px] 2xl:w-[80px] 2xl:h-[74px] xl:top-[187px] xl:left-[189px] 2xl:top-[217px] 2xl:left-[222px]">
-                <img src="./img/Opened-box.png" alt="" class="absolute xl:w-[79px] xl:h-[63px] 2xl:w-[92px] 2xl:h-[74px] xl:top-[425px] xl:left-[886px] 2xl:top-[501px] 2xl:left-[1032px]">
+                <img src="./img/Close-box.png"  alt="" class="absolute w-[21px] h-[19px] md:w-[40px] md:h-[37px] lg:w-[58px] lg:h-[54px] xl:w-[69px] xl:h-[64px] 2xl:w-[80px] 2xl:h-[74px] top-[px] left-[px] md:top-[px] md:left-[px] lg:top-[157px] lg:left-[161px] xl:top-[187px] xl:left-[189px] 2xl:top-[217px] 2xl:left-[222px]">
+                <img src="./img/Opened-box.png" alt="" class="absolute w-[24px] h-[19px] md:w-[45px] md:h-[36px] lg:w-[66px] lg:h-[53px] xl:w-[79px] xl:h-[63px] 2xl:w-[92px] 2xl:h-[74px] top-[px] left-[px] md:top-[px] md:left-[px] lg:top-[359px] lg:left-[746px] xl:top-[425px] xl:left-[886px] 2xl:top-[501px] 2xl:left-[1032px]">
             </div>
 
             <!-- Cities -->
             <div class="">
-                <div class="flex items-center justify-center xl:space-x-[183px] 2xl:space-x-[244px]">
+                <div class="flex items-center justify-center lg:space-x-[183px] xl:space-x-[183px] 2xl:space-x-[244px]">
                     <p class="text-[66px] font-bold text-red-300">0</p>
                     <p class="text-[66px] font-bold inline-block text-transparent bg-clip-text background-gradient-mash">1</p>
                     <p class="text-[66px] font-bold text-green-400">2</p>
-                    <p class="text-[66px] font-bold text-blue-300">3</p>
-                    <p class="text-[66px] font-bold inline-block text-transparent bg-clip-text background-gradient-orange">4</p>
+                    <p class="hidden xl:inline-block text-[66px] font-bold text-blue-300">3</p>
+                    <p class="hidden xl:inline-block text-[66px] font-bold text-transparent bg-clip-text background-gradient-orange">4</p>
                 </div>
-                <div class="flex items-center justify-center xl:space-x-[26px] 2xl:space-x-[20px] mt-px">
+                <div class="flex items-center justify-center lg:space-x-[26px] 2xl:space-x-[20px] mt-px">
                     <!-- 0 -->
                     <div class="w-6 h-6 bg-red-300 rounded-full"></div>
-                    <div class="xl:w-[144px] 2xl:w-[218px] h-0.5 bg-red-300 rounded-full"></div>
+                    <div class="lg:w-[144px] 2xl:w-[218px] h-0.5 bg-red-300 rounded-full"></div>
                     <!-- 1 -->
                     <div class="w-6 h-6 background-gradient-mash rounded-full"></div>
-                    <div class="xl:w-[144px] 2xl:w-[218px] h-0.5 background-gradient-mash rounded-full"></div>
+                    <div class="lg:w-[144px] 2xl:w-[218px] h-0.5 background-gradient-mash rounded-full"></div>
                     <!-- 2 -->
                     <div class="w-6 h-6 bg-green-400 rounded-full"></div>
-                    <div class="xl:w-[144px] 2xl:w-[218px] h-0.5 bg-green-400 rounded-full"></div>
+                    <div class="hidden xl:block lg:w-[144px] 2xl:w-[218px] h-0.5 bg-green-400 rounded-full"></div>
                     <!-- 3 -->
-                    <div class="w-6 h-6 bg-blue-300 rounded-full"></div>
-                    <div class="xl:w-[144px] 2xl:w-[218px] h-0.5 bg-blue-300 rounded-full"></div>
+                    <div class="hidden xl:block w-6 h-6 bg-blue-300 rounded-full"></div>
+                    <div class="hidden xl:block lg:w-[144px] 2xl:w-[218px] h-0.5 bg-blue-300 rounded-full"></div>
                     <!-- 4 -->
-                    <div class="w-6 h-6 background-gradient-orange rounded-full"></div>
+                    <div class="hidden xl:block w-6 h-6 background-gradient-orange rounded-full"></div>
                 </div>
                 <div class="flex justify-center text-center mt-[31px]">
-                    <p class="xl:text-xl 2xl:text-2xl font-bold">Las Vegas, NV, USA</p>
-                    <p class="xl:text-xl 2xl:text-2xl font-bold xl:ml-[40px] 2xl:ml-[70px]">New York, NY, USA</p>
-                    <p class="xl:text-xl 2xl:text-2xl font-bold xl:ml-[71px] 2xl:ml-[90px]">Lagos, Nigeria</p>
-                    <p class="xl:text-xl 2xl:text-2xl font-bold xl:ml-[99px] 2xl:ml-[128px]">Kyiv, Ukraine</p>
-                    <p class="xl:text-xl 2xl:text-2xl font-bold xl:ml-[81px] 2xl:ml-[110px]">Sydney, Australia</p>
+                    <p class=" lg:text-xl xl:text-xl 2xl:text-2xl font-bold">Las Vegas, NV, USA</p>
+                    <p class=" lg:text-xl xl:text-xl 2xl:text-2xl font-bold lg:ml-[49px] xl:ml-[40px] 2xl:ml-[70px]">New York, NY, USA</p>
+                    <p class=" lg:text-xl xl:text-xl 2xl:text-2xl font-bold lg:ml-[71px] xl:ml-[71px] 2xl:ml-[90px]">Lagos, Nigeria</p>
+                    <p class="hidden lg:text-xl xl:block xl:text-xl 2xl:text-2xl font-bold xl:ml-[99px] 2xl:ml-[128px]">Kyiv, Ukraine</p>
+                    <p class="hidden lg:text-xl xl:block xl:text-xl 2xl:text-2xl font-bold xl:ml-[81px] 2xl:ml-[110px]">Sydney, Australia</p>
+                </div>
+            </div>
+            <div class="hidden lg:block xl:hidden">
+                <div class="flex items-center justify-center lg:space-x-[183px] xl:space-x-[183px] 2xl:space-x-[244px]">
+                    <p class=" xl:inline-block text-[66px] font-bold text-blue-300">3</p>
+                    <p class=" xl:inline-block text-[66px] font-bold text-transparent bg-clip-text background-gradient-orange">4</p>
+                </div>
+                <div class="flex items-center justify-center lg:space-x-[26px] 2xl:space-x-[20px] mt-px">
+
+                    <!-- 3 -->
+                    <div class=" xl:block w-6 h-6 bg-blue-300 rounded-full"></div>
+                    <div class=" xl:block lg:w-[144px] 2xl:w-[218px] h-0.5 bg-blue-300 rounded-full"></div>
+                    <!-- 4 -->
+                    <div class=" xl:block w-6 h-6 background-gradient-orange rounded-full"></div>
+                </div>
+                <div class="flex justify-center text-center mt-[31px]">
+
+                    <p class="lg:text-xl xl:block xl:text-xl 2xl:text-2xl font-bold xl:ml-[99px] 2xl:ml-[128px]">Kyiv, Ukraine</p>
+                    <p class="lg:text-xl xl:block xl:text-xl 2xl:text-2xl font-bold lg:ml-[81px] xl:ml-[96px] 2xl:ml-[110px]">Sydney, Australia</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Try NEAR Cold chain right now! -->
-    <section class="relative bg-gray-100 xl:pt-[154px] 2xl:pt-[218px]">
+    <section class="relative bg-gray-100 lg:pt-[174px] xl:pt-[154px] 2xl:pt-[218px]">
 
         <!-- Decorations -->
         <div class="">
@@ -355,11 +403,11 @@
 
             <!-- Title -->
             <div class="text-center">
-                <p class="xl:text-[40px] 2xl:text-[50px] font-bold xl:leading-[49px] 2xl:leading-[62px]">
+                <p class="md:text-[40px] 2xl:text-[50px] font-bold xl:leading-[49px] 2xl:leading-[62px]">
                     Try NEAR Cold chain <br> 
                     <span class="inline-block text-transparent bg-clip-text background-gradient-pink">right now!</span>
                 </p>
-                <p class="xl:text-base 2xl:text-xl font-medium text-gray-400 mx-auto mt-4 leading-6">
+                <p class="md:text-base 2xl:text-xl font-medium text-gray-400 mx-auto mt-4 leading-6">
                     The best way to send a coldchain package with <br> tracking and fully secured!
                 </p>
                 <button class="mx-auto w-[214px] h-[53px] mt-[34px] rounded-[10px] bg-blue-300 hover:bg-blue-400 transform active:scale-95 duration-100">
@@ -367,7 +415,7 @@
                 </button>
             </div>
 
-            <img src="./img/Close-box-huge.png" alt="" class="mx-auto mt-[84px] xl:w-[365px] xl:h-[338px] 2xl:w-[468px] 2xl:h-[433px]">
+            <img src="./img/Close-box-huge.png" alt="" class="mx-auto mt-[84px] md:w-[365px] md:h-[338px] 2xl:w-[468px] 2xl:h-[433px]">
 
         </div>
 
@@ -376,7 +424,6 @@
     <!-- Footer -->
     <footer class="relative bg-gray-100 pt-[150px] pb-[46px]">
         <div class="container mx-auto lg:pl-[31px] lg:pr-[30px] xl:pl-[77px] xl:pr-[76px] 2xl:px-20">
-
             <div class="bg-white px-[65px] pt-[31px] pb-[25px] rounded-[20px]">
 
                 <div class="flex">
@@ -406,7 +453,7 @@
                         </ul>
                     </div>
 
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[7px] xl:ml-[121px] 2xl:ml-[212px]">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[7px] lg:ml-[89px] xl:ml-[121px] 2xl:ml-[212px]">
                         
                         <!-- About -->
                         <div class="">

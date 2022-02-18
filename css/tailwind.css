@@ -15,6 +15,9 @@
     .background-gradient-orange {
         background: linear-gradient(135deg, #FFC853 14.64%, #FFBB54 43.64%, #FFA157 84.68%);
     }
+    .background-gradient-orange-10 {
+        background: linear-gradient(135deg, rgba(255, 200, 83, 0.05) 14.64%, rgba(255, 187, 84, 0.05) 43.64%, rgba(255, 161, 87, 0.05) 84.68%);
+    }
     .background-gradient-pink {
         background: linear-gradient(90deg, #D596E2 0%, #EEBACE 100%);
     }

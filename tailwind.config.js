@@ -15,6 +15,7 @@ module.exports = {
           900: '#222222',
         },
         green: {
+          300: '#3CC13B',
           400: '#8DD715',
           500: '#70AB10',
         },
@@ -22,8 +23,12 @@ module.exports = {
           300: '#9CD5FF',
           400: '#88C5F1',
         },
+        yellow: {
+          400: '#F3BB1C',
+        },
         red: {
           300: '#EB9B8F',
+          400: '#F03738',
         },
       },
       borderRadius: {

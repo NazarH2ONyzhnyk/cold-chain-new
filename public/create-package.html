@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create package</title>
+    <link rel="stylesheet" href="build/tailwind.css">
+    <link rel="icon" href="./img/Coldchainlogo.png">
+</head>
+<body>
+
+    <!-- Create popup -->
+    <div class="fixed w-screen h-screen z-40 bg-black bg-opacity-50 py-[56px] lg:py-[176px] overflow-y-scroll">
+        <div class="w-[356px] md:w-[495px] mx-auto bg-white px-[14px] pt-[38px] pb-[48px] rounded-[10px]">
+
+            <!-- Navigation -->
+            <nav class="flex justify-between items-center px-[10px]">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center">
+                    <div class="">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[25px] h-[35px]" viewBox="0 0 40 56" fill="none">
+                            <path d="M8.52607 45.384V54.9128C8.52607 54.9854 8.47086 55.058 8.37885 55.058H7.3667C6.90663 55.058 6.46497 54.8221 6.20733 54.4409L1.64348 47.4894L1.7907 50.9561V54.931C1.7907 55.0036 1.73549 55.0762 1.64348 55.0762H0.318486C0.244876 55.0762 0.171265 55.0217 0.171265 54.931V45.384C0.171265 45.3114 0.226473 45.2388 0.318486 45.2388H1.31223C1.77229 45.2388 2.21396 45.4747 2.4716 45.8559L7.03545 52.7893L6.88823 49.3226V45.384C6.88823 45.3114 6.94344 45.2388 7.03545 45.2388H8.36044C8.47086 45.2388 8.52607 45.2932 8.52607 45.384Z" fill="black"/>
+                            <path d="M20.4856 55.0399H19.087C18.995 55.0399 18.9214 54.9491 18.9582 54.8584L22.6755 45.3658C22.7123 45.2932 22.7859 45.2388 22.8595 45.2388H24.6262C24.7182 45.2388 24.7918 45.2932 24.8102 45.3658L28.546 54.8584C28.5828 54.9491 28.5092 55.0399 28.4171 55.0399H27.0185C26.9633 55.0399 26.9081 55.0036 26.8897 54.9491L23.8901 47.1445C23.8533 47.0356 23.6693 47.0356 23.6324 47.1445L20.6328 54.9491C20.596 55.0036 20.5408 55.0399 20.4856 55.0399Z" fill="black"/>
+                            <path d="M38.3032 54.8221L35.506 51.3009C37.0887 51.0105 38.0088 49.9578 38.0088 48.3425C38.0088 46.4911 36.7942 45.2388 34.6227 45.2388H30.7214C30.6109 45.2388 30.5189 45.3295 30.5189 45.4384C30.5189 46.1644 31.1078 46.7452 31.8439 46.7452H34.4755C35.7821 46.7452 36.4078 47.3986 36.4078 48.3606C36.4078 49.3226 35.8005 49.976 34.4755 49.976H30.7582C30.6477 49.976 30.5557 50.0667 30.5557 50.1756V54.8947C30.5557 54.9673 30.6109 55.0399 30.7029 55.0399H32.0279C32.1016 55.0399 32.1752 54.9854 32.1752 54.8947V51.3917H33.7026L36.1317 54.5135C36.3894 54.8584 36.7942 55.0399 37.2359 55.0399H38.248C38.3216 55.0399 38.3768 54.9128 38.3032 54.8221Z" fill="black"/>
+                            <path d="M16.8382 45.2388H10.6733C10.5629 45.2388 10.4893 45.3114 10.4893 45.4203C10.4893 46.1463 11.0965 46.7452 11.8327 46.7452H16.8382C16.9118 46.7452 16.9854 46.6908 16.9854 46.6V45.3658C16.967 45.2932 16.9118 45.2388 16.8382 45.2388ZM16.8382 53.5334H12.2375C12.1639 53.5334 12.0903 53.479 12.0903 53.3882V50.9379C12.0903 50.8653 12.1455 50.7927 12.2375 50.7927H16.4885C16.5622 50.7927 16.6358 50.7383 16.6358 50.6475V49.4133C16.6358 49.3407 16.5806 49.2681 16.4885 49.2681H10.6917C10.5813 49.2681 10.4893 49.3589 10.4893 49.4678V54.8221C10.4893 54.931 10.5813 55.0218 10.6917 55.0218H16.8382C16.9118 55.0218 16.9854 54.9673 16.9854 54.8766V53.6423C16.967 53.5879 16.9118 53.5334 16.8382 53.5334Z" fill="black"/>
+                            <path d="M32.0873 2.00554L23.7768 14.1696C23.2021 14.9979 24.3072 16.0007 25.1029 15.3031L33.2808 8.28374C33.5019 8.10935 33.8113 8.24014 33.8113 8.54533V30.4755C33.8113 30.7806 33.4134 30.9114 33.2366 30.6934L8.48181 1.48235C7.68612 0.523184 6.53679 0 5.25484 0H4.37074C2.07208 0 0.171265 1.87474 0.171265 4.18547V35.0533C0.171265 37.364 2.07208 39.2388 4.41495 39.2388C5.87371 39.2388 7.24407 38.4976 8.03976 37.2332L16.3503 25.0692C16.925 24.2408 15.8198 23.2381 15.0242 23.9357L6.84622 30.9114C6.6252 31.0858 6.31576 30.955 6.31576 30.6499V8.76333C6.31576 8.45814 6.71361 8.32734 6.89043 8.54533L31.6452 37.7564C32.4409 38.7156 33.6345 39.2388 34.8722 39.2388H35.7563C38.0992 39.2388 40 37.364 40 35.0533V4.18547C39.9558 1.87474 38.055 0 35.7121 0C34.2533 0 32.883 0.741176 32.0873 2.00554Z" fill="black"/>
+                        </svg>
+                    </div>
+                    <div class="w-[2px] h-[35px] bg-green-400 mx-[11px] rounded-full"></div>
+                    <div class="">
+                        <p class="text-lg font-semibold leading-5">cold chain</p>
+                        <p class="text-[10px] text-gray-400 tracking-[7px]">delivery</p>
+                    </div>
+                </a>
+
+                <!-- Close button -->
+                <button class="">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30" fill="none">
+                        <path d="M25.0379 6.28791C25.404 5.9218 25.404 5.3282 25.0379 4.96209C24.6718 4.59597 24.0782 4.59597 23.7121 4.96209L15 13.6742L6.28791 4.96209C5.9218 4.59597 5.3282 4.59597 4.96209 4.96209C4.59597 5.3282 4.59597 5.9218 4.96209 6.28791L13.6742 15L4.96209 23.7121C4.59597 24.0782 4.59597 24.6718 4.96209 25.0379C5.32821 25.404 5.9218 25.404 6.28791 25.0379L15 16.3258L23.7121 25.0379C24.0782 25.404 24.6718 25.404 25.0379 25.0379C25.404 24.6718 25.404 24.0782 25.0379 23.7121L16.3258 15L25.0379 6.28791Z" fill="#9CD5FF"/>
+                    </svg>
+                </button>
+
+            </nav>
+
+            <!-- Title -->
+            <p class="text-2xl font-bold mt-4 text-center">Package creating</p>
+            <img src="./img/Close-box-huge.png" alt="box" class="w-[138px] h-[127px] mx-auto mt-[31px]">
+
+            <!-- Form -->
+            <form action="" class="w-[328px] md:w-[397px] mx-auto mt-[30px] md:mt-[18px]">
+
+                <!-- Name & Temperature -->
+                <div class="flex justify-between">
+
+                    <div class="">
+                        <p class="text-xs font-semibold">Package name</p>
+                        <input type="text" placeholder="Example name" class="mt-2 h-10 w-[195px] md:w-[260px] rounded-[10px] pl-2 md:pl-4 outline-none border border-gray-200 text-sm placeholder-gray-300 focus:border-blue-400">
+                        <!-- Error input -->
+                        <input type="text" placeholder="Example name" class="mt-2 h-10 w-[195px] md:w-[260px] rounded-[10px] pl-2 md:pl-4 outline-none border border-red-400 text-sm placeholder-gray-300">
+                        <!-- Warning input -->
+                        <input type="text" placeholder="Example name" class="mt-2 h-10 w-[195px] md:w-[260px] rounded-[10px] pl-2 md:pl-4 outline-none border border-yellow-400 text-sm placeholder-gray-300">
+                    
+                        <!-- Error message -->
+                        <div class="flex mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="pb-px" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M0.666687 13.9999H15.3334L8.00002 1.33325L0.666687 13.9999ZM8.66669 11.9999H7.33335V10.6666H8.66669V11.9999ZM8.66669 9.33325H7.33335V6.66659H8.66669V9.33325Z" fill="#F03738"/>
+                            </svg>
+                            <p class="text-xs text-gray-400 ml-2">Name must be less than 20 characters</p>
+                        </div>
+                    
+                        <!-- Warning message -->
+                        <div class="flex mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="pb-px" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M0.666687 13.9999H15.3334L8.00002 1.33325L0.666687 13.9999ZM8.66669 11.9999H7.33335V10.6666H8.66669V11.9999ZM8.66669 9.33325H7.33335V6.66659H8.66669V9.33325Z" fill="#F3BB1C"/>
+                            </svg>
+                            <p class="text-xs text-gray-400 ml-2">You must give a name for package</p>
+                        </div>
+
+                    </div>
+
+                    <div class="">
+                        <p class="text-xs font-semibold">Set temperature</p>
+                        
+                        <input type="text" placeholder="0℃" class="mt-2 h-10 w-[125px] rounded-[10px] pl-2 md:pl-4 outline-none border border-gray-200 text-sm placeholder-gray-300 focus:border-blue-400">
+                        <!-- Error input -->
+                        <input type="text" placeholder="0℃" class="mt-2 h-10 w-[125px] rounded-[10px] pl-2 md:pl-4 outline-none border border-red-400 text-sm placeholder-gray-300">
+                        <!-- Warning input -->
+                        <input type="text" placeholder="0℃" class="mt-2 h-10 w-[125px] rounded-[10px] pl-2 md:pl-4 outline-none border border-yellow-400 text-sm placeholder-gray-300">
+                    
+                        <!-- Error message -->
+                        <div class="flex mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M0.666687 13.9999H15.3334L8.00002 1.33325L0.666687 13.9999ZM8.66669 11.9999H7.33335V10.6666H8.66669V11.9999ZM8.66669 9.33325H7.33335V6.66659H8.66669V9.33325Z" fill="#F03738"/>
+                            </svg>
+                            <p class="text-xs text-gray-400 ml-3">We work from <br> -80℃ to 200℃</p>
+                        </div>
+
+                        <!-- Warning message -->
+                        <div class="flex mt-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="pb-px" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M0.666687 13.9999H15.3334L8.00002 1.33325L0.666687 13.9999ZM8.66669 11.9999H7.33335V10.6666H8.66669V11.9999ZM8.66669 9.33325H7.33335V6.66659H8.66669V9.33325Z" fill="#F3BB1C"/>
+                            </svg>
+                            <p class="text-xs text-gray-400 ml-3">This field is <br> required</p>
+                        </div>
+                    </div>
+                
+                </div>
+
+                <!-- Reciever -->
+                <div class="mt-4">
+                    <p class="text-xs font-semibold">Go to</p>
+                    <input type="text" placeholder="Example.near" class="mt-2 h-10 w-full rounded-[10px] pl-2 md:pl-4 outline-none border border-gray-200 text-sm placeholder-gray-300 focus:border-blue-400">
+                    <!-- Warning input -->
+                    <input type="text" placeholder="Example.near" class="mt-2 h-10 w-full rounded-[10px] pl-2 md:pl-4 outline-none border border-yellow-400 text-sm placeholder-gray-300 ">
+                    <!-- Success input -->
+                    <input type="text" placeholder="Example.near" class="mt-2 h-10 w-full rounded-[10px] pl-2 md:pl-4 outline-none border border-green-300 text-sm placeholder-gray-300 ">
+                    <!-- Warning message -->
+                    <div class="flex mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="pb-px" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M0.666687 13.9999H15.3334L8.00002 1.33325L0.666687 13.9999ZM8.66669 11.9999H7.33335V10.6666H8.66669V11.9999ZM8.66669 9.33325H7.33335V6.66659H8.66669V9.33325Z" fill="#F3BB1C"/>
+                        </svg>
+                        <p class="text-xs text-gray-400 ml-2">We can find this ID, package for your risk</p>
+                    </div>
+                    <!-- Success message -->
+                    <div class="flex mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+                            <path d="M7.00004 0.333374C3.32004 0.333374 0.333374 3.32004 0.333374 7.00004C0.333374 10.68 3.32004 13.6667 7.00004 13.6667C10.68 13.6667 13.6667 10.68 13.6667 7.00004C13.6667 3.32004 10.68 0.333374 7.00004 0.333374ZM5.66671 10.3334L2.33337 7.00004L3.27337 6.06004L5.66671 8.44671L10.7267 3.38671L11.6667 4.33337L5.66671 10.3334Z" fill="#3CC13B"/>
+                        </svg>
+                        <p class="text-xs text-gray-400 ml-2">Correct ID</p>
+                    </div>
+                    
+                </div>
+
+                <!-- Details -->
+                <div class="mt-4">
+                    <p class="text-xs font-semibold">Set a details</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Example info" class="w-full h-20 mt-2 rounded-[10px] border border-gray-200 outline-none px-2 md:px-4 py-[10px] text-sm focus:border-blue-300 placeholder-gray-300"></textarea>
+                </div>
+
+                <!-- Warning -->
+                <div class="relative mt-[22px] w-full p-[14px] bg-green-400 bg-opacity-50 rounded-[10px]">
+                    <img src="./img/near-3.png" alt="" class="absolute -right-4 top-4 md:top-0 w-[77px] h-[77px] md:w-[87px] md:h-[87px]">
+                    <p class="text-sm w-[252px] md:w-[308px]">
+                        Cold chain will reserved <b>10 NEAR</b> from your wallet. If delivery will successful we return you NEAR from you and recipient will pay this price
+                    </p>
+                </div>
+
+                <!-- Send button -->
+                <button class="w-[214px] h-[53px] mt-4 md:mt-[35px] mx-auto rounded-[10px] bg-blue-300 hover:bg-blue-400 flex items-center justify-center transform active:scale-95 duration-100">
+                    <div class="text-lg font-bold">Send a packedge</div>
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="bg-gray-100 pt-6 md:pt-[30px] lg:pt-[34px] xl:pt-50">
+        <div class="container mx-auto px-[10px] md:pl-[30px] md:pr-[44px] lg:pl-[30px] lg:pr-[31px] xl:pl-[77px] xl:pr-[76px] 2xl:px-[80px]">
+
+            <!-- Mobile user -->
+            <div class="flex md:hidden items-center justify-center space-x-[10px]">
+                <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                <p class="text-lg font-bold">nazarH2O.near </p>
+            </div>
+
+            <!-- Navbar -->
+            <nav class="mt-2 w-full rounded-large bg-white">
+                <div class="flex h-[65px] md:h-[77px] lg:h-[95px] 2xl:h-28 px-[10px] md:px-10 items-center justify-between">
+
+                    <!-- Logo -->
+                    <a href="#" class="flex items-center">
+                        <div class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-[25px] h-[35px] md:w-[31px] md:h-[42px] xl:w-[40px] xl:h-[55px]" viewBox="0 0 40 56" fill="none">
+                                <path d="M8.52607 45.384V54.9128C8.52607 54.9854 8.47086 55.058 8.37885 55.058H7.3667C6.90663 55.058 6.46497 54.8221 6.20733 54.4409L1.64348 47.4894L1.7907 50.9561V54.931C1.7907 55.0036 1.73549 55.0762 1.64348 55.0762H0.318486C0.244876 55.0762 0.171265 55.0217 0.171265 54.931V45.384C0.171265 45.3114 0.226473 45.2388 0.318486 45.2388H1.31223C1.77229 45.2388 2.21396 45.4747 2.4716 45.8559L7.03545 52.7893L6.88823 49.3226V45.384C6.88823 45.3114 6.94344 45.2388 7.03545 45.2388H8.36044C8.47086 45.2388 8.52607 45.2932 8.52607 45.384Z" fill="black"/>
+                                <path d="M20.4856 55.0399H19.087C18.995 55.0399 18.9214 54.9491 18.9582 54.8584L22.6755 45.3658C22.7123 45.2932 22.7859 45.2388 22.8595 45.2388H24.6262C24.7182 45.2388 24.7918 45.2932 24.8102 45.3658L28.546 54.8584C28.5828 54.9491 28.5092 55.0399 28.4171 55.0399H27.0185C26.9633 55.0399 26.9081 55.0036 26.8897 54.9491L23.8901 47.1445C23.8533 47.0356 23.6693 47.0356 23.6324 47.1445L20.6328 54.9491C20.596 55.0036 20.5408 55.0399 20.4856 55.0399Z" fill="black"/>
+                                <path d="M38.3032 54.8221L35.506 51.3009C37.0887 51.0105 38.0088 49.9578 38.0088 48.3425C38.0088 46.4911 36.7942 45.2388 34.6227 45.2388H30.7214C30.6109 45.2388 30.5189 45.3295 30.5189 45.4384C30.5189 46.1644 31.1078 46.7452 31.8439 46.7452H34.4755C35.7821 46.7452 36.4078 47.3986 36.4078 48.3606C36.4078 49.3226 35.8005 49.976 34.4755 49.976H30.7582C30.6477 49.976 30.5557 50.0667 30.5557 50.1756V54.8947C30.5557 54.9673 30.6109 55.0399 30.7029 55.0399H32.0279C32.1016 55.0399 32.1752 54.9854 32.1752 54.8947V51.3917H33.7026L36.1317 54.5135C36.3894 54.8584 36.7942 55.0399 37.2359 55.0399H38.248C38.3216 55.0399 38.3768 54.9128 38.3032 54.8221Z" fill="black"/>
+                                <path d="M16.8382 45.2388H10.6733C10.5629 45.2388 10.4893 45.3114 10.4893 45.4203C10.4893 46.1463 11.0965 46.7452 11.8327 46.7452H16.8382C16.9118 46.7452 16.9854 46.6908 16.9854 46.6V45.3658C16.967 45.2932 16.9118 45.2388 16.8382 45.2388ZM16.8382 53.5334H12.2375C12.1639 53.5334 12.0903 53.479 12.0903 53.3882V50.9379C12.0903 50.8653 12.1455 50.7927 12.2375 50.7927H16.4885C16.5622 50.7927 16.6358 50.7383 16.6358 50.6475V49.4133C16.6358 49.3407 16.5806 49.2681 16.4885 49.2681H10.6917C10.5813 49.2681 10.4893 49.3589 10.4893 49.4678V54.8221C10.4893 54.931 10.5813 55.0218 10.6917 55.0218H16.8382C16.9118 55.0218 16.9854 54.9673 16.9854 54.8766V53.6423C16.967 53.5879 16.9118 53.5334 16.8382 53.5334Z" fill="black"/>
+                                <path d="M32.0873 2.00554L23.7768 14.1696C23.2021 14.9979 24.3072 16.0007 25.1029 15.3031L33.2808 8.28374C33.5019 8.10935 33.8113 8.24014 33.8113 8.54533V30.4755C33.8113 30.7806 33.4134 30.9114 33.2366 30.6934L8.48181 1.48235C7.68612 0.523184 6.53679 0 5.25484 0H4.37074C2.07208 0 0.171265 1.87474 0.171265 4.18547V35.0533C0.171265 37.364 2.07208 39.2388 4.41495 39.2388C5.87371 39.2388 7.24407 38.4976 8.03976 37.2332L16.3503 25.0692C16.925 24.2408 15.8198 23.2381 15.0242 23.9357L6.84622 30.9114C6.6252 31.0858 6.31576 30.955 6.31576 30.6499V8.76333C6.31576 8.45814 6.71361 8.32734 6.89043 8.54533L31.6452 37.7564C32.4409 38.7156 33.6345 39.2388 34.8722 39.2388H35.7563C38.0992 39.2388 40 37.364 40 35.0533V4.18547C39.9558 1.87474 38.055 0 35.7121 0C34.2533 0 32.883 0.741176 32.0873 2.00554Z" fill="black"/>
+                            </svg>
+                        </div>
+                        <div class="w-[2px] h-[35px] md:h-[42px] xl:w-[3px] xl:h-[55px] bg-green-400 mx-[11px] md:mx-[14px] xl:mx-[18px] rounded-full"></div>
+                        <div class="">
+                            <p class="md:text-[22px] md:leading-[28px] xl:text-3xl font-semibold">cold chain</p>
+                            <p class="md:text-[13px] xl:text-xl text-gray-400 md:tracking-[8px] xl:tracking-[10px]">delivery</p>
+                        </div>
+                    </a>
+
+                    <div class="flex items-center">
+                        <!-- Mobile user -->
+                        <div class="hidden md:flex items-center justify-center space-x-[10px]">
+                            <div class="w-3 h-3 bg-green-400 rounded-full"></div>
+                            <p class="text-lg font-bold">nazarH2O.near </p>
+                        </div>
+                        <!-- Create a package -->
+                        <button class="ml-6 flex items-center justify-center w-[165px] md:w-[217px] h-[40px] md:h-[53px] bg-blue-300 hover:bg-blue-400 rounded-[10px] transform active:scale-95 duration-100">
+                            <p class="text-sm md:text-lg font-bold">Create a package</p>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="mt-10 md:px-[13px] lg:pl-[66px] lg:pr-[79px] xl:pl-[18px] xl:pr-[55px] 2xl:pl-[17px] 2xl:pr-[56px] flex flex-col md:flex-row md:justify-between space-y-4 md:space-y-0">
+                <!-- My receipts -->
+                <div class="flex items-center justify-center space-x-[14px]">
+                    <p class="text-2xl lg:text-[35px] font-bold">My receipts</p>
+                    <img src="./img/Opened-box.png" alt="Opened-box" class="w-[43px] h-[38px] lg:w-[52px] lg:h-[46px]">
+                </div>
+                <!-- My shipments | My receipts -->
+                <div class="flex items-center justify-center space-x-2">
+                    <a href="./shipments.html" class="text-lg 2xl:text-2xl font-bold text-gray-300 hover:text-green-400">My shipments</a>
+                    <div class="w-0.5 h-4 bg-gray-300"></div>
+                    <a href="#" class="text-lg 2xl:text-2xl font-bold text-green-400 hover:text-green-500">My receipts</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <!-- Map & Description -->
+    <section class="bg-gray-100 pt-[42px] md:pt-[31px] xl:[pt-46px] 2xl:pt-[67px]">
+        <div class="container mx-auto px-[10px] md:pl-[30px] md:pr-[44px] lg:pl-[30px] lg:pr-[31px] xl:pl-[77px] xl:pr-[76px] 2xl:px-[80px]">
+
+            <div class="flex flex-wrap xl:justify-between md:px-[13px] lg:pl-[66px] lg:pr-[79px] xl:pl-[18px] xl:pr-[55px] 2xl:pl-[17px] 2xl:pr-[56px]">
+
+                <!-- Map wrapper -->
+                <div class="mx-auto xl:mx-0 w-[349px] h-[511px] md:w-[682px] lg:w-[818px] lg:h-[613px] xl:w-[682px] xl:h-[511px] 2xl:w-[818px] 2xl:h-[613px] pt-[30px] border-2 border-gray-200 rounded-[20px] overflow-x-scroll md:overflow-auto">
+                    
+                    <!-- Map -->
+                    <div class="relative mx-auto w-[610px] h-[340px] lg:w-[731px] lg:h-[408px] xl:w-[610px] xl:h-[340px] 2xl:w-[731px] 2xl:h-[408px]">
+                        <!-- Dotted map -->
+                        <img src="./img/dots.png" alt="" class="">
+                         <!-- Pointers -->
+                        <img src="./img/LA.png"     alt="" class="absolute w-[27px] h-[44px] lg:w-[32px] lg:h-[53px] xl:w-[27px] xl:h-[44px] 2xl:w-[32px] 2xl:h-[53px] 
+                                                                  top-[96px] left-[71px] lg:top-[115px] lg:left-[86px] xl:top-[96px] xl:left-[71px] 2xl:top-[115px] 2xl:left-[86px]">
+
+                        <img src="./img/NY.png"     alt="" class="absolute w-[27px] h-[44px] lg:w-[32px] lg:h-[53px] xl:w-[27px] xl:h-[44px] 2xl:w-[32px] 2xl:h-[53px] 
+                                                                  top-[65px] left-[143px] lg:top-[78px] lg:left-[172px] xl:top-[65px] xl:left-[143px] 2xl:top-[78px] 2xl:left-[172px]">
+
+                        <img src="./img/Lagos.png"  alt="" class="absolute w-[27px] h-[44px] lg:w-[32px] lg:h-[53px] xl:w-[27px] xl:h-[44px] 2xl:w-[32px] 2xl:h-[53px] 
+                                                                  top-[152px] left-[275px] lg:top-[184px] lg:left-[331px] xl:top-[152px] xl:left-[275px] 2xl:top-[184px] 2xl:left-[331px]">
+
+                        <img src="./img/Kyiv.png"  alt="" class="absolute w-[27px] h-[44px] lg:w-[32px] lg:h-[53px] xl:w-[27px] xl:h-[44px] 2xl:w-[32px] 2xl:h-[53px] 
+                                                                  top-[64px] left-[326px] lg:top-[75px] lg:left-[391px] xl:top-[64px] xl:left-[326px] 2xl:top-[75px] 2xl:left-[391px]">
+
+                        <img src="./img/Sydney.png" alt="" class="absolute w-[27px] h-[44px] lg:w-[32px] lg:h-[53px] xl:w-[27px] xl:h-[44px] 2xl:w-[32px] 2xl:h-[53px] 
+                                                                  top-[238px] left-[531px] lg:top-[285px] lg:left-[637px] xl:top-[238px] xl:left-[531px] 2xl:top-[285px] 2xl:left-[637px]">
+
+                        <!-- Lines -->
+                        <img src="./img/1.png" alt="" class="absolute w-[48px] h-[22px] lg:w-[58px] lg:h-[26px] xl:w-[48px] xl:h-[22px] 2xl:w-[58px] 2xl:h-[26px]
+                                                             top-[112px] left-[96px] lg:top-[134px] lg:left-[117px] xl:top-[112px] xl:left-[97px] 2xl:top-[134px] 2xl:left-[117px]">
+                                                             
+                        <img src="./img/2.png" alt="" class="absolute w-[112px] h-[89px] lg:w-[134px] lg:h-[106px] xl:w-[112px] xl:h-[89px] 2xl:w-[134px] 2xl:h-[106px]
+                                                             top-[110px] left-[167px] lg:top-[132px] lg:left-[200px] xl:top-[110px] xl:left-[167px] 2xl:top-[132px] 2xl:left-[200px]">
+
+                        <img src="./img/3.png" alt="" class="absolute w-[36px] h-[85px] lg:w-[43px] lg:h-[102px] xl:w-[36px] xl:h-[85px] 2xl:w-[43px] 2xl:h-[102px]
+                                                             top-[114px] left-[300px] lg:top-[137px] lg:left-[360px] xl:top-[114px] xl:left-[300px] 2xl:top-[137px] 2xl:left-[360px]">
+
+                        <img src="./img/4.png" alt="" class="absolute w-[185px] h-[176px] lg:w-[222px] lg:h-[211px] xl:w-[185px] xl:h-[176px] 2xl:w-[222px] 2xl:h-[211px]
+                                                             top-[106px] left-[349px] lg:top-[127px] lg:left-[419px] xl:top-[106px] xl:left-[349px] 2xl:top-[127px] 2xl:left-[419px]">
+                        <!-- Boxes -->
+                        <img src="./img/Close-box.png"  alt="" class="absolute w-[38px] h-[35px] lg:w-[45px] lg:h-[42px] xl:w-[38px] xl:h-[35px] 2xl:w-[45px] 2xl:h-[42px]
+                                                                      top-[176px] left-[275px] lg:top-[211px] lg:left-[329px] xl:top-[176px] xl:left-[275px] 2xl:top-[211px] 2xl:left-[329px]">
+                        <!-- <img src="./img/Opened-box.png" alt="" class="absolute w-[24px] h-[19px] md:w-[45px] md:h-[36px] lg:w-[66px] lg:h-[53px] xl:w-[79px] xl:h-[63px] 2xl:w-[92px] 2xl:h-[74px] top-[128px] left-[266px] md:top-[247px] md:left-[512px] lg:top-[359px] lg:left-[746px] xl:top-[425px] xl:left-[886px] 2xl:top-[501px] 2xl:left-[1032px]"> -->
+                    </div>
+
+                    <!-- Numbers -->
+                    <div class="mt-[33px] w-[610px] md:w-auto flex items-center justify-center space-x-[114px] lg:space-x-[140px] xl:space-x-[114px] 2xl:space-x-[140px]">
+                        <p class="text-[31px] leading-[38px] font-bold text-red-300">0</p>
+                        <p class="text-[31px] leading-[38px] font-bold inline-block text-transparent bg-clip-text background-gradient-mash">1</p>
+                        <p class="text-[31px] leading-[38px] font-bold text-green-400">2</p>
+                        <p class="text-[31px] leading-[38px] font-bold text-blue-300">3</p>
+                        <p class="text-[31px] leading-[38px] font-bold text-transparent bg-clip-text background-gradient-orange">4</p>
+                    </div>
+                    <!-- Lines -->
+                    <div class="w-[610px] md:w-auto mt-0.5 flex items-center justify-center space-x-[9px] lg:space-x-[11px] xl:space-x-[9px] 2xl:space-x-[11px]">
+                        <div class="w-3 h-3 rounded-full bg-red-300"></div>
+                        <div class="w-[102px] lg:w-[123px] xl:w-[102px] 2xl:w-[123px] h-px bg-red-300"></div>
+                        <div class="w-3 h-3 rounded-full background-gradient-mash"></div>
+                        <div class="w-[102px] lg:w-[123px] xl:w-[102px] 2xl:w-[123px] h-px background-gradient-mash"></div>
+                        <div class="w-3 h-3 rounded-full bg-green-400"></div>
+                        <div class="w-[102px] lg:w-[123px] xl:w-[102px] 2xl:w-[123px] h-px bg-green-400"></div>
+                        <div class="w-3 h-3 rounded-full bg-blue-300"></div>
+                        <div class="w-[102px] lg:w-[123px] xl:w-[102px] 2xl:w-[123px] h-px bg-blue-300"></div>
+                        <div class="w-3 h-3 rounded-full background-gradient-orange"></div>
+                    </div>
+                    <!-- Cities -->
+                    <div class="mt-[18px] w-[610px] md:w-full flex items-center justify-center text-center">
+                        <p class="text-[11px] lg:text-sm xl:text-[11px] 2xl:text-sm font-bold">Las Vegas, NV, USA</p>
+                        <p class="text-[11px] lg:text-sm xl:text-[11px] 2xl:text-sm font-bold ml-[33px] lg:ml-10">New York, NY, USA</p>
+                        <p class="text-[11px] lg:text-sm xl:text-[11px] 2xl:text-sm font-bold ml-[42px] lg:ml-[51px]">Lagos, Nigeria</p>
+                        <p class="text-[11px] lg:text-sm xl:text-[11px] 2xl:text-sm font-bold ml-[60px] lg:ml-[72px]">Kyiv, Ukraine</p>
+                        <p class="text-[11px] lg:text-sm xl:text-[11px] 2xl:text-sm font-bold ml-[52px] lg:ml-[62px]">Sydney, Australia</p>
+                    </div>
+                </div>  
+
+                <!-- Package list -->
+                <div class="no-scrollbar mx-auto md:mx-0 mt-[60px] xl:mt-0 w-[349px] 2xl:w-[449px] h-[511px] 2xl:h-[613px] border-2 border-gray-200 rounded-[20px] overflow-hidden">
+                    
+                    <!-- Title -->
+                    <div class="w-full flex items-center justify-between p-5 border-b-2 border-gray-200">
+                        <p class="text-2xl font-bold">Package list</p>
+                        <a href="#" class="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M11.4838 8.60227C11.7843 8.88738 12.259 8.87492 12.5441 8.57444C12.8292 8.27396 12.8167 7.79925 12.5162 7.51414L8.25 3.46619L3.98377 7.51414C3.68329 7.79925 3.67083 8.27396 3.95594 8.57444C4.24104 8.87492 4.71575 8.88738 5.01623 8.60227L7.5 6.24558V19.5001C7.5 19.9143 7.83579 20.2501 8.25 20.2501C8.66422 20.2501 9 19.9143 9 19.5001V6.24558L11.4838 8.60227Z" fill="#9CD5FF"/>
+                                <path d="M18.9838 15.3977C19.2843 15.1126 19.759 15.1251 20.0441 15.4256C20.3292 15.726 20.3167 16.2008 20.0162 16.4859L15.75 20.5338L11.4838 16.4859C11.1833 16.2008 11.1708 15.726 11.4559 15.4256C11.741 15.1251 12.2158 15.1126 12.5162 15.3977L15 17.7544V4.49993C15 4.08572 15.3358 3.74993 15.75 3.74993C16.1642 3.74993 16.5 4.08572 16.5 4.49993V17.7544L18.9838 15.3977Z" fill="#9CD5FF"/>
+                            </svg>
+                        </a>
+                    </div>
+
+                    <!-- List -->
+                    <div class="w-full h-full scrollbar overflow-y-scroll pb-20">
+                        
+                        <!-- One package -->
+                        <a href="#" class="flex items-center justify-between w-full h-[110px] px-[14px] 2xl:px-6 border-b-2 border-gray-200 hover:bg-blue-50">
+
+                            <div class="flex items-center">
+                                <!-- Box image -->
+                                <div class="flex items-center justify-center w-[73px] h-[73px] rounded-full border-2 border-gray-200 ">
+                                    <img src="./img/Opened-box.png" alt="" class="w-[52px] h-[42px]  ">
+                                </div>
+                                <!-- Name & Location -->
+                                <div class="ml-[9px] 2xl:ml-[17px]">
+                                    <p class="text-base 2xl:text-lg font-bold">Package name</p>
+                                    <p class="text-base 2xl:text-lg font-bold text-red-300 mt-0.5">0 - LA, Navada</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="text-base font-medium text-gray-400">temp</p> 
+                                <p class="text-4xl leading-[54px] font-bold text-blue-300"> -2℃</p>
+                            </div>
+                        </a>
+
+                        <!-- One package -->
+                        <a href="#" class="flex items-center justify-between w-full h-[110px] px-[14px] 2xl:px-6 border-b-2 border-gray-200 bg-blue-50">
+
+                            <div class="flex items-center">
+                                <!-- Box image -->
+                                <div class="flex items-center justify-center w-[73px] h-[73px] rounded-full border-2 border-gray-200 ">
+                                    <img src="./img/Opened-box.png" alt="" class="w-[52px] h-[42px]  ">
+                                </div>
+                                <!-- Name & Location -->
+                                <div class="ml-[9px] 2xl:ml-[17px]">
+                                    <p class="text-base 2xl:text-lg font-bold">Ice cream</p>
+                                    <p class="text-base 2xl:text-lg font-bold text-green-400 mt-0.5">2 - Lagos, Nigeria</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="text-base font-medium text-gray-400">temp</p> 
+                                <p class="text-4xl leading-[54px] font-bold text-blue-300"> 0℃</p>
+                            </div>
+                        </a>
+
+                        <!-- One package -->
+                        <a href="#" class="flex items-center justify-between w-full h-[110px] px-[14px] 2xl:px-6 border-b-2 border-gray-200 hover:bg-blue-50">
+
+                            <div class="flex items-center">
+                                <!-- Box image -->
+                                <div class="flex items-center justify-center w-[73px] h-[73px] rounded-full border-2 border-gray-200 ">
+                                    <img src="./img/Opened-box.png" alt="" class="w-[52px] h-[42px]  ">
+                                </div>
+                                <!-- Name & Location -->
+                                <div class="ml-[9px] 2xl:ml-[17px]">
+                                    <p class="text-base 2xl:text-lg font-bold">Burn</p>
+                                    <p class="text-base 2xl:text-lg font-bold bg-gradient-orange mt-0.5">4 - Sydney, Australia</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="text-base font-medium text-gray-400">temp</p> 
+                                <p class="text-4xl leading-[54px] font-bold bg-gradient-orange"> 18℃</p>
+                            </div>
+                        </a>
+
+                        <!-- One package -->
+                        <a href="#" class="flex items-center justify-between w-full h-[110px] px-[14px] 2xl:px-6 border-b-2 border-gray-200 hover:bg-blue-50 background-gradient-orange-10">
+
+                            <div class="flex items-center">
+                                <!-- Box image -->
+                                <div class="flex items-center justify-center w-[73px] h-[73px] rounded-full border-2 border-gray-200 background-gradient-orange">
+                                    <img src="./img/Opened-box.png" alt="" class="w-[52px] h-[42px]  ">
+                                </div>
+                                <!-- Name & Location -->
+                                <div class="ml-[9px] 2xl:ml-[17px]">
+                                    <p class="text-base 2xl:text-lg font-bold">Ice cream</p>
+                                    <p class="text-base 2xl:text-lg font-bold text-blue-300 mt-0.5">2 - Kyiv, Ukraine</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="text-base font-medium text-gray-400">temp</p> 
+                                <p class="text-4xl leading-[54px] font-bold text-blue-300"> -4℃</p>
+                            </div>
+                        </a>
+                        
+                        <!-- One package -->
+                        <a href="#" class="flex items-center justify-between w-full h-[110px] px-[14px] 2xl:px-6 border-b-2 border-gray-200 hover:bg-blue-50">
+
+                            <div class="flex items-center">
+                                <!-- Box image -->
+                                <div class="flex items-center justify-center w-[73px] h-[73px] rounded-full border-2 border-gray-200 ">
+                                    <img src="./img/Opened-box.png" alt="" class="w-[52px] h-[42px]  ">
+                                </div>
+                                <!-- Name & Location -->
+                                <div class="ml-[9px] 2xl:ml-[17px]">
+                                    <p class="text-base 2xl:text-lg font-bold">Package name</p>
+                                    <p class="text-base 2xl:text-lg font-bold text-red-300 mt-0.5">0 - LA, Navada</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="text-base font-medium text-gray-400">temp</p> 
+                                <p class="text-4xl leading-[54px] font-bold text-blue-300"> -2℃</p>
+                            </div>
+                        </a>
+
+                        <!-- One package -->
+                        <a href="#" class="flex items-center justify-between w-full h-[110px] px-[14px] 2xl:px-6 border-b-2 border-gray-200 hover:bg-blue-50">
+
+                            <div class="flex items-center">
+                                <!-- Box image -->
+                                <div class="flex items-center justify-center w-[73px] h-[73px] rounded-full border-2 border-gray-200 ">
+                                    <img src="./img/Opened-box.png" alt="" class="w-[52px] h-[42px]  ">
+                                </div>
+                                <!-- Name & Location -->
+                                <div class="ml-[9px] 2xl:ml-[17px]">
+                                    <p class="text-base 2xl:text-lg font-bold">Ice cream</p>
+                                    <p class="text-base 2xl:text-lg font-bold text-green-400 mt-0.5">2 - Lagos, Nigeria</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="text-base font-medium text-gray-400">temp</p> 
+                                <p class="text-4xl leading-[54px] font-bold text-blue-300"> 0℃</p>
+                            </div>
+                        </a>
+
+                        <!-- One package -->
+                        <a href="#" class="flex items-center justify-between w-full h-[110px] px-[14px] 2xl:px-6 border-b-2 border-gray-200 hover:bg-blue-50">
+
+                            <div class="flex items-center">
+                                <!-- Box image -->
+                                <div class="flex items-center justify-center w-[73px] h-[73px] rounded-full border-2 border-gray-200 ">
+                                    <img src="./img/Opened-box.png" alt="" class="w-[52px] h-[42px]  ">
+                                </div>
+                                <!-- Name & Location -->
+                                <div class="ml-[9px] 2xl:ml-[17px]">
+                                    <p class="text-base 2xl:text-lg font-bold">Burn</p>
+                                    <p class="text-base 2xl:text-lg font-bold bg-gradient-orange mt-0.5">4 - Sydney, Australia</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="text-base font-medium text-gray-400">temp</p> 
+                                <p class="text-4xl leading-[54px] font-bold bg-gradient-orange"> 18℃</p>
+                            </div>
+                        </a>
+
+                        <!-- One package -->
+                        <a href="#" class="flex items-center justify-between w-full h-[110px] px-[14px] 2xl:px-6 border-b-2 border-gray-200 hover:bg-blue-50">
+
+                            <div class="flex items-center">
+                                <!-- Box image -->
+                                <div class="flex items-center justify-center w-[73px] h-[73px] rounded-full border-2 border-gray-200 ">
+                                    <img src="./img/Opened-box.png" alt="" class="w-[52px] h-[42px]  ">
+                                </div>
+                                <!-- Name & Location -->
+                                <div class="ml-[9px] 2xl:ml-[17px]">
+                                    <p class="text-base 2xl:text-lg font-bold">Ice cream</p>
+                                    <p class="text-base 2xl:text-lg font-bold text-blue-300 mt-0.5">2 - Kyiv, Ukraine</p>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <p class="text-base font-medium text-gray-400">temp</p> 
+                                <p class="text-4xl leading-[54px] font-bold text-blue-300"> -4℃</p>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <!-- Package info -->
+                <div class="mt-[60px] w-[349px] md:w-[255px] lg:w-auto mx-auto md:mx-0 md:ml-[58px] xl:ml-0">
+                    <div class="flex flex-col xl:flex-row xl:justify-between xl:w-[682px] 2xl:w-[818px]">
+                        <div class="">
+                            
+                            <!-- Package name -->
+                            <p class="text-[35px] font-bold">Ice cream</p>
+
+                            <!-- Temperature & Payment -->
+                            <div class="mt-[30px] flex">
+                                <div class="">
+                                    <p class="text-lg font-bold">Temperature</p>
+                                    <p class="text-[36px] font-bold text-blue-300">0℃</p>
+                                </div>
+                                <div class="ml-6">
+                                    <p class="text-lg font-bold">Payment</p>
+                                    <p class="mt-4 text-xl font-bold bg-gradient-mash">Reserved</p>
+                                </div>
+                            </div>
+                            <!-- From & To-->
+                            <div class="mt-[30px] lg:mt-4 flex">
+                                <div class="">
+                                    <p class="text-lg font-bold">From</p>
+                                    <p class="mt-4 text-base font-bold text-blue-300">oliinykk.near</p>
+                                </div>
+                                <div class="ml-[39px]">
+                                    <p class="text-lg font-bold">To</p>
+                                    <p class="mt-4 text-base font-bold text-green-400">nazar.near</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-[22px] lg:mt-[30px] xl:mt-0">
+                            <div class="flex flex-col xl:flex-row items-baseline">
+                                <p class="text-2xl font-bold text-gray-300">Currently in:</p>
+                                <p class="mt-2 xl:ml-3 xl:mt-0 text-lg font-bold text-green-400">2 - Lagos, Nigeria</p>
+                            </div>
+
+                            <!-- Blocked button -->
+                            <!-- <button class="mt-[26px] w-[217px] h-[53px] rounded-[10px] bg-gray-200 cursor-not-allowed">
+                                <p class="text-lg font-bold text-gray-400">Get withdraw</p>
+                            </button> -->
+
+                            <!-- Normal button -->
+                            <button class="mt-[26px] w-[217px] h-[53px] rounded-[10px] bg-blue-300 hover:bg-blue-400 transform active:scale-95 duration-100">
+                                <p class="text-lg font-bold">Get withdraw</p>
+                            </button>
+
+                            <!-- Details -->
+                            <div class="md:hidden lg:block xl:hidden mt-8 w-[347px] lg:w-[410px]">
+                                <p class="text-2xl font-bold">Details</p>
+                                <p class="mt-[10px] text-base text-gray-400">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna purus 
+                                    pretium lacus interdum habitant. Tristique lacus mi molestie sed eget 
+                                    at porttitor. Elit sit felis sagittis, imperdiet consectetur. Ac nibh 
+                                    cursus lacus nullam sit mattis. Ipsum sapien condimentum aenean praesent.
+                                </p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- Details -->
+            <div class="hidden md:block lg:hidden xl:block mt-8 w-[425px] xl:w-[682px] 2xl:w-[816px] md:px-[13px] lg:pl-[66px] lg:pr-[79px] xl:pl-[18px] xl:pr-[55px] 2xl:pl-[17px] 2xl:pr-[56px]">
+                <p class="text-2xl font-bold">Details</p>
+                <p class="mt-[10px] text-base text-gray-400">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Magna purus 
+                    pretium lacus interdum habitant. Tristique lacus mi molestie sed eget 
+                    at porttitor. Elit sit felis sagittis, imperdiet consectetur. Ac nibh 
+                    cursus lacus nullam sit mattis. Ipsum sapien condimentum aenean praesent.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative bg-gray-100 pt-[63px] md:pt-[150px] pb-[46px]">
+        <div class="container mx-auto px-[10px] md:px-[30px] lg:pl-[31px] lg:pr-[30px] xl:pl-[77px] xl:pr-[76px] 2xl:px-20">
+            <div class="bg-white md:px-[38px] lg:px-[65px] pt-[31px] pb-[25px] rounded-[20px]">
+
+                <div class="flex-col md:flex md:flex-row pl-[14px] md:pl-0 space-y-[24px] md:space-y-0">
+
+                    <div class="">
+                        <!-- Logo -->
+                        <a href="#" class="flex items-center">
+                            <div class="">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-[25px] h-[35px] md:w-[31px] md:h-[42px] xl:w-[40px] xl:h-[55px]" viewBox="0 0 40 56" fill="none">
+                                    <path d="M8.52607 45.384V54.9128C8.52607 54.9854 8.47086 55.058 8.37885 55.058H7.3667C6.90663 55.058 6.46497 54.8221 6.20733 54.4409L1.64348 47.4894L1.7907 50.9561V54.931C1.7907 55.0036 1.73549 55.0762 1.64348 55.0762H0.318486C0.244876 55.0762 0.171265 55.0217 0.171265 54.931V45.384C0.171265 45.3114 0.226473 45.2388 0.318486 45.2388H1.31223C1.77229 45.2388 2.21396 45.4747 2.4716 45.8559L7.03545 52.7893L6.88823 49.3226V45.384C6.88823 45.3114 6.94344 45.2388 7.03545 45.2388H8.36044C8.47086 45.2388 8.52607 45.2932 8.52607 45.384Z" fill="black"/>
+                                    <path d="M20.4856 55.0399H19.087C18.995 55.0399 18.9214 54.9491 18.9582 54.8584L22.6755 45.3658C22.7123 45.2932 22.7859 45.2388 22.8595 45.2388H24.6262C24.7182 45.2388 24.7918 45.2932 24.8102 45.3658L28.546 54.8584C28.5828 54.9491 28.5092 55.0399 28.4171 55.0399H27.0185C26.9633 55.0399 26.9081 55.0036 26.8897 54.9491L23.8901 47.1445C23.8533 47.0356 23.6693 47.0356 23.6324 47.1445L20.6328 54.9491C20.596 55.0036 20.5408 55.0399 20.4856 55.0399Z" fill="black"/>
+                                    <path d="M38.3032 54.8221L35.506 51.3009C37.0887 51.0105 38.0088 49.9578 38.0088 48.3425C38.0088 46.4911 36.7942 45.2388 34.6227 45.2388H30.7214C30.6109 45.2388 30.5189 45.3295 30.5189 45.4384C30.5189 46.1644 31.1078 46.7452 31.8439 46.7452H34.4755C35.7821 46.7452 36.4078 47.3986 36.4078 48.3606C36.4078 49.3226 35.8005 49.976 34.4755 49.976H30.7582C30.6477 49.976 30.5557 50.0667 30.5557 50.1756V54.8947C30.5557 54.9673 30.6109 55.0399 30.7029 55.0399H32.0279C32.1016 55.0399 32.1752 54.9854 32.1752 54.8947V51.3917H33.7026L36.1317 54.5135C36.3894 54.8584 36.7942 55.0399 37.2359 55.0399H38.248C38.3216 55.0399 38.3768 54.9128 38.3032 54.8221Z" fill="black"/>
+                                    <path d="M16.8382 45.2388H10.6733C10.5629 45.2388 10.4893 45.3114 10.4893 45.4203C10.4893 46.1463 11.0965 46.7452 11.8327 46.7452H16.8382C16.9118 46.7452 16.9854 46.6908 16.9854 46.6V45.3658C16.967 45.2932 16.9118 45.2388 16.8382 45.2388ZM16.8382 53.5334H12.2375C12.1639 53.5334 12.0903 53.479 12.0903 53.3882V50.9379C12.0903 50.8653 12.1455 50.7927 12.2375 50.7927H16.4885C16.5622 50.7927 16.6358 50.7383 16.6358 50.6475V49.4133C16.6358 49.3407 16.5806 49.2681 16.4885 49.2681H10.6917C10.5813 49.2681 10.4893 49.3589 10.4893 49.4678V54.8221C10.4893 54.931 10.5813 55.0218 10.6917 55.0218H16.8382C16.9118 55.0218 16.9854 54.9673 16.9854 54.8766V53.6423C16.967 53.5879 16.9118 53.5334 16.8382 53.5334Z" fill="black"/>
+                                    <path d="M32.0873 2.00554L23.7768 14.1696C23.2021 14.9979 24.3072 16.0007 25.1029 15.3031L33.2808 8.28374C33.5019 8.10935 33.8113 8.24014 33.8113 8.54533V30.4755C33.8113 30.7806 33.4134 30.9114 33.2366 30.6934L8.48181 1.48235C7.68612 0.523184 6.53679 0 5.25484 0H4.37074C2.07208 0 0.171265 1.87474 0.171265 4.18547V35.0533C0.171265 37.364 2.07208 39.2388 4.41495 39.2388C5.87371 39.2388 7.24407 38.4976 8.03976 37.2332L16.3503 25.0692C16.925 24.2408 15.8198 23.2381 15.0242 23.9357L6.84622 30.9114C6.6252 31.0858 6.31576 30.955 6.31576 30.6499V8.76333C6.31576 8.45814 6.71361 8.32734 6.89043 8.54533L31.6452 37.7564C32.4409 38.7156 33.6345 39.2388 34.8722 39.2388H35.7563C38.0992 39.2388 40 37.364 40 35.0533V4.18547C39.9558 1.87474 38.055 0 35.7121 0C34.2533 0 32.883 0.741176 32.0873 2.00554Z" fill="black"/>
+                                </svg>
+                            </div>
+                            <div class="w-[2px] h-[35px] md:h-[42px] xl:w-[3px] xl:h-[55px] bg-green-400 mx-[11px] md:mx-[14px] xl:mx-[18px] rounded-full"></div>
+                            <div class="">
+                                <p class="md:text-[22px] md:leading-[28px] xl:text-3xl font-semibold">cold chain</p>
+                                <p class="md:text-[13px] xl:text-xl text-gray-400 md:tracking-[8px] xl:tracking-[10px]">delivery</p>
+                            </div>
+                        </a>
+
+                        <ul class="space-y-[6px] mt-[19px]">
+                            <li class=""><a href="#" class="hover:text-blue-400">info@nearcoldchain</a></li>
+                            <li class=""><a href="#" class="hover:text-blue-400">1-232-3434 (Main)</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-[7px] md:ml-[89px] xl:ml-[121px] 2xl:ml-[212px] space-y-[24px] md:space-y-0">
+                        
+                        <!-- About -->
+                        <div class="">
+                            <p class="font-bold">About</p>
+                            <ul class="font-medium mt-[11px] space-y-[6px]">
+                                <li class=""><a href="#" class="hover:text-blue-400">About contract</a></li>
+                                <li class=""><a href="#" class="hover:text-blue-400">About NEAR</a></li>
+                                <li class=""><a href="#" class="hover:text-blue-400">About NEAR ecosystem</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Community -->
+                        <div class="md:ml-[88px]">
+                            <p class="font-bold">Community</p>
+                            <ul class="font-medium mt-[11px] space-y-[6px]">
+                                <li class=""><a href="#" class="hover:text-blue-400">Community OS Wiki</a></li>
+                                <li class=""><a href="#" class="hover:text-blue-400">Forum </a></li>
+                                <li class=""><a href="#" class="hover:text-blue-400">Events</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Help -->
+                        <div class="lg:ml-[88px]">
+                            <p class="font-bold">Help</p>
+                            <ul class="font-medium mt-[11px] space-y-[6px]">
+                                <li class=""><a href="#" class="hover:text-blue-400">Support</a></li>
+                                <li class=""><a href="#" class="hover:text-blue-400">info@nearcoldchain</a></li>
+                                <li class=""><a href="#" class="hover:text-blue-400">1-232-3434 (Main)</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <p class="text-center text-sm font-bold mt-[19px]">© 2021 NEAR Ltd</p>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
